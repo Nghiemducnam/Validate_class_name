@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var input= prompt("Nhập tên lớp của bạn tại đây: ");
+    function checkClassName(str) {
+        var rule= /^[CAP]+[0-9]{4}[GHIKLM]$/;
+        if(rule.test(str)) {
+            alert('class name ' + str + ' hợp lệ')
+        }else {
+            alert('class name '  + str + ' không hợp lệ')
+        }
+    }
+    checkClassName(input)
+</script>
+
+</body>
+</html>
